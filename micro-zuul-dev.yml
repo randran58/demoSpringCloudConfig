@@ -1,8 +1,10 @@
 zuul:
   routes:
-    micro-zuul:
-      path: /**
-      serviceId: micro-web
+    books:
+        url=http://localhost:8081
+    #micro-zuul:
+    #  path: /**
+    #  serviceId: micro-web
   host:
     socket-timeout-millis: 600000
     connect-timeout-millis: 600000
