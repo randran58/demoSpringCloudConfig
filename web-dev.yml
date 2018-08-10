@@ -4,3 +4,5 @@ mysqldb:
     datasource:
         mapperLocations: classpath:mybatis/mapper/*.xml
         typeAliasPackage: com.lemon.*.*.po
+test:
+    wee: xxxxxxx
