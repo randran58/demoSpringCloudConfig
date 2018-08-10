@@ -1,2 +1,6 @@
 server:
     port: 8080
+mysqldb:
+    datasource:
+        mapperLocations: classpath:mybatis/mapper/*.xml
+        typeAliasPackage: com.lemon.*.*.po
