@@ -5,4 +5,4 @@ mysqldb:
         mapperLocations: classpath:mybatis/mapper/*.xml
         typeAliasPackage: com.springCloud.*.*.po
 test:
-    wee: xxxxxxx
+    wee: xtestsscccc
