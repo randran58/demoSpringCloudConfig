@@ -3,6 +3,6 @@ server:
 mysqldb:
     datasource:
         mapperLocations: classpath:mybatis/mapper/*.xml
-        typeAliasPackage: com.lemon.*.*.po
+        typeAliasPackage: com.springCloud.*.*.po
 test:
     wee: xxxxxxx
