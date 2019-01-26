@@ -22,3 +22,4 @@ spring:
                 ip-address: 192.168.3.2
                 # 在注册时使用 consul IP
                 prefer-ip-address: true
+                tesxx: 1
