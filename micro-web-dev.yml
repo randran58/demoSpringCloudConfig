@@ -1,8 +1,24 @@
 server:
-    port: 8080
+    port: 8081
 mysqldb:
     datasource:
         mapperLocations: classpath:mybatis/mapper/*.xml
         typeAliasPackage: com.springCloud.*.*.po
-test:
-    wee: xtestsscccc
+spring:
+    cloud:
+        consul:
+            host: 192.168.71.128
+            discovery:
+                health-check-path: /actuator/health
+                health-check-interval: 60s
+                instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+                # 指定服务的 consul service name 
+                service_name: microWebServer
+                #是否注册到consul，消费者可以设置为false
+                register: true
+                # 是否启用服务发现 
+                enabled: true 
+                # 使用 consul 服务器 IP, 需要搭配 prefer-ip-address 属性
+                ip-address: 192.168.3.2
+                # 在注册时使用 consul IP
+                prefer-ip-address: true
